@@ -14,7 +14,7 @@
     "test": "jest --watchAll",
     "build-webpack": "webpack -p",
     "build-node": "babel lib -d build --copy-files",
-    "start": "pm2 build/server.js -i max --name appProd"
+    "start": "pm2 start lib/server.js -i max --name appProd"
   },
   "babel": {
     "presets": [
