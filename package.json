@@ -12,14 +12,21 @@
     "logs": "pm2 logs",
     "stop": "pm2 kill",
     "test": "jest --watchAll",
-    "build-webpack":"webpack -p",
-    "build-node":"babel lib -d build --copy-files",
+    "build-webpack": "webpack -p",
+    "build-node": "babel lib -d build --copy-files",
     "start": "pm2 start build/server.js -i max --name appProd"
   },
   "babel": {
     "presets": [
       "react",
-      ["env", { "targets": { "node": "current" } }]
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
     ],
     "plugins": [
       "transform-class-properties",
@@ -35,6 +42,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
+    "babel-core": "6",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
