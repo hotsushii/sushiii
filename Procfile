@@ -1,1 +1,1 @@
-web: npm start-prod
+web: pm2 build/server.js
